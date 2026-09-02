@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — NEONFALL</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #14161c;
+    --muted: #5a6072;
+    --bg: #ffffff;
+    --rule: #e3e6ee;
+    --accent: #0b6bcb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e7e9f0; --muted: #a2a9bd; --bg: #12141a; --rule: #2a2e3a; --accent: #6cb2ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.4rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .3rem; letter-spacing: -.02em; }
+  .updated { color: var(--muted); font-size: .93rem; margin: 0 0 2.2rem; }
+  h2 {
+    font-size: 1.18rem; margin: 2.6rem 0 .7rem; padding-top: 1.4rem;
+    border-top: 1px solid var(--rule); letter-spacing: -.01em;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.3rem; }
+  li { margin-bottom: .55rem; }
+  strong { font-weight: 600; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .9em; background: color-mix(in srgb, var(--rule) 60%, transparent);
+    padding: .1em .35em; border-radius: 3px;
+  }
+  a { color: var(--accent); }
+  .contact { margin-top: .5rem; }
+  .contact li { list-style: none; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .88rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy — NEONFALL</h1>
+<p class="updated">Last updated: 26 August 2026</p>
+
+<p>NEONFALL plays offline. The gameplay itself makes no network calls and does not collect, transmit, or share any personal data. The single exception is optional in-app purchases, which are processed by Google Play and described below. This policy explains exactly what the app stores, what the purchase path processes, and where.</p>
+
+<h2>What the app stores</h2>
+<p>The game saves the following, and only the following, on your device:</p>
+<ul>
+  <li><strong>Game progress</strong> — unlocked levels, upgrades, coins, and gems (including gems credited from a purchase)</li>
+  <li><strong>Settings</strong> — options such as language, sound, and visual preferences</li>
+  <li><strong>High scores</strong> — your local best scores</li>
+</ul>
+<p>This data lives in two places, both on your device only:</p>
+<ul>
+  <li>the platform's standard app preferences store (Unity <strong>PlayerPrefs</strong>), and</li>
+  <li>one local save file (<code>cloud_backup.sav</code>) in the app's private storage folder.</li>
+</ul>
+<p>None of it identifies you. It is play-state, not personal data.</p>
+
+<h2>In-app purchases</h2>
+<p>The game offers optional purchases. These are handled by <strong>Google Play's billing system</strong>, integrated through the <strong>Unity Purchasing SDK</strong> (<code>com.unity.purchasing</code>, version 5.4.2). This is the one third-party SDK contained in the app.</p>
+<ul>
+  <li><strong>What Google processes.</strong> The payment itself happens entirely inside Google Play, using the Google account signed in on your device. The app never sees your payment details — no name, no card number, no billing address. Google's handling of that data is governed by Google Play's own terms and privacy policy.</li>
+  <li><strong>What the app receives.</strong> After a payment, the app receives order data from Google Play — the product identifier and the purchase receipt — verifies it, credits the purchase, and stores the result locally like any other progress.</li>
+  <li><strong>What a purchase requires.</strong> Buying requires an internet connection and a Google account. Playing the game requires neither. The five gem packs are consumable — once credited they are gone from the store's own record, so there is nothing left to “restore” after a reinstall.</li>
+</ul>
+
+<h2>What the app does not do</h2>
+<ul>
+  <li><strong>No transmission from gameplay.</strong> Playing sends nothing anywhere. The only network feature in the app is the purchase path described above.</li>
+  <li><strong>No analytics or tracking.</strong> There is no analytics service and no advertising identifier.</li>
+  <li><strong>No advertising.</strong> The game shows no ads, and no advertising SDK is included in the app.</li>
+  <li><strong>No other third-party SDKs.</strong> The Unity Purchasing SDK described above is the only one; no other external service receives anything.</li>
+  <li><strong>No sign-up.</strong> You never create an account for the game and never provide a name, email address, or any other personal information to it. Purchases use the Google account already on your device, through Google Play.</li>
+  <li><strong>No permissions beyond what a game with purchases requires.</strong> The app does not access your contacts, location, camera, microphone, or files outside its own storage. (Google Play's standard billing permission is used for the purchases described above.)</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>Uninstalling the app deletes all of the locally stored data listed above; the app keeps no copy anywhere else. Your purchase history is not stored by the app at all — it belongs to your Google account and remains with Google Play. To manage or delete that history, use your Google account settings.</p>
+<p>One note outside the app's control: your device's operating system may include app data in its own device backups (for example Android's automatic backup to your Google account). That behaviour belongs to your device and its settings, not to the game.</p>
+
+<h2>Children</h2>
+<p>The game collects no data from anyone, including children, and contains no chat and no advertising. In-app purchases are real-money purchases processed by Google Play: Google Play's purchase authentication and parental-control settings apply, and a purchase awaiting approval (for example parental approval) is not credited until Google Play confirms it.</p>
+
+<h2>Changes to this policy</h2>
+<p>If a future version of the game ever adds a feature that handles data differently (for example online leaderboards), this policy will be updated first, and the “Last updated” date above will change.</p>
+
+<h2>Contact</h2>
+<p>If you have questions about this policy or the app:</p>
+<ul class="contact">
+  <li>Publisher: <strong>Raphael Esslinger</strong></li>
+  <li>Email: <a href="mailto:support.northloopsgame@gmail.com">support.northloopsgame@gmail.com</a></li>
+  <li>Address (where legally required): <strong>Frauenalber Straße 39, 76199 Karlsruhe, Germany</strong></li>
+</ul>
+
+<footer>NEONFALL is published by Raphael Esslinger (Northloops Games).</footer>
+
+</main>
+</body>
+</html>
