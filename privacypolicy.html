@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — NEONFALL</title>
+<title>Datenschutzerklärung — NEONFALL</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -40,7 +40,7 @@
     font-size: .9em; background: color-mix(in srgb, var(--rule) 60%, transparent);
     padding: .1em .35em; border-radius: 3px;
   }
-  a { color: var(--accent); }
+  a { color: var(--accent); overflow-wrap: anywhere; }
   .contact { margin-top: .5rem; }
   .contact li { list-style: none; }
   footer {
@@ -52,62 +52,162 @@
 <body>
 <main>
 
-<h1>Privacy Policy — NEONFALL</h1>
-<p class="updated">Last updated: 26 August 2026</p>
-
-<p>NEONFALL plays offline. The gameplay itself makes no network calls and does not collect, transmit, or share any personal data. The single exception is optional in-app purchases, which are processed by Google Play and described below. This policy explains exactly what the app stores, what the purchase path processes, and where.</p>
-
-<h2>What the app stores</h2>
-<p>The game saves the following, and only the following, on your device:</p>
+<h1>Datenschutzerklärung — NEONFALL</h1>
+<p class="updated">Stand: 5. September 2026</p>
+<p>NEONFALL ist ein Arcade-Spiel für Android. Das Spielen selbst läuft offline: Beim Fliegen, Schießen und Aufsteigen wird nichts an mich oder an Dritte gesendet. Ins Netz gehen genau drei Vorgänge, und alle drei sind unten einzeln beschrieben: die Einwilligungsabfrage für Werbung, Käufe über Google Play und die Belohnungsvideos von Google AdMob. Diese Erklärung sagt Ihnen, was die App auf Ihrem Gerät speichert, was bei diesen drei Wegen verarbeitet wird, wer es bekommt, auf welcher Rechtsgrundlage und welche Rechte Sie haben.</p>
+<p>App: NEONFALL (Paketname <code>com.neonfall.arcade</code>), vertrieben über Google Play.</p>
+<hr>
+<h2>1. Verantwortlicher</h2>
+<p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+<p>Raphael Esslinger<br>Frauenalber Strasse 39<br>76199 Karlsruhe<br>Deutschland<br>support.northloopsgame@gmail.com</p>
+<p>Ein Datenschutzbeauftragter ist nicht benannt. Die Voraussetzungen des Art. 37 DSGVO und des § 38 BDSG liegen nicht vor: Es sind keine Beschäftigten mit der Datenverarbeitung befasst, und zur Kerntätigkeit gehört weder eine umfangreiche regelmäßige Beobachtung von Personen noch eine umfangreiche Verarbeitung besonderer Datenkategorien.</p>
+<hr>
+<h2>2. Was die App auf Ihrem Gerät speichert</h2>
+<p>Die App speichert Folgendes lokal auf Ihrem Gerät:</p>
 <ul>
-  <li><strong>Game progress</strong> — unlocked levels, upgrades, coins, and gems (including gems credited from a purchase)</li>
-  <li><strong>Settings</strong> — options such as language, sound, and visual preferences</li>
-  <li><strong>High scores</strong> — your local best scores</li>
+<li><strong>Spielfortschritt und Besitz</strong> — freigeschaltete Level, Upgrades, Karten und Waffen, Schiffe, Erfolge sowie Coins und Gems (einschließlich Gems aus einem Kauf oder einem Belohnungsvideo)</li>
+<li><strong>Bestwerte</strong> — Ihre lokalen Highscores, einschließlich einer Bestenliste der eigenen fünf besten Endlos-Läufe. Diese Liste bleibt auf dem Gerät; es gibt keine Online-Bestenliste.</li>
+<li><strong>Zähl- und Zeitstände</strong> — Statistiken (abgeschossene Gegner, besiegte Bosse, geöffnete Kisten, beste Combo, Glücksfunde), die täglichen Missionen, Ihre Tagesserie, Merker für Tutorial- und Erststart-Hinweise sowie einige Zeitanker (wann zuletzt gespielt wurde und wann der Kalendertag zuletzt gewechselt ist), damit Tagesbelohnungen und Serien richtig rechnen</li>
+<li><strong>Einstellungen</strong> — zum Beispiel Sprache, Ton, Darstellung, Vibration und die Stellung des Schalters „Nutzungsstatistik" (siehe Abschnitt 6)</li>
+<li><strong>Ein Kaufregister</strong> — zu jedem abgeschlossenen Kauf die von Google Play vergebene Transaktionskennung mit Zeitstempel, damit derselbe Kauf nicht zweimal gutgeschrieben wird. Es wird nach 14 Tagen automatisch gelöscht.</li>
+<li><strong>Ihre Werbe-Einwilligung</strong> — die Antwort auf die Einwilligungsabfrage, gespeichert vom SDK der Google User Messaging Platform (UMP), damit das Spiel Sie beim nächsten Start nicht erneut fragt</li>
 </ul>
-<p>This data lives in two places, both on your device only:</p>
+<p>Technisch liegt das an drei Orten, alle auf Ihrem Gerät:</p>
 <ul>
-  <li>the platform's standard app preferences store (Unity <strong>PlayerPrefs</strong>), and</li>
-  <li>one local save file (<code>cloud_backup.sav</code>) in the app's private storage folder.</li>
+<li>im Standard-Einstellungsspeicher der Plattform (Unity <strong>PlayerPrefs</strong>),</li>
+<li>in einer lokalen Sicherungsdatei (<code>cloud_backup.sav</code>) im privaten Ordner der App — trotz des Namens gibt es keine Cloud-Sicherung, die Datei heißt nur so,</li>
+<li>in den privaten Einstellungen der Google-SDKs für Werbung und Einwilligung.</li>
 </ul>
-<p>None of it identifies you. It is play-state, not personal data.</p>
-
-<h2>In-app purchases</h2>
-<p>The game offers optional purchases. These are handled by <strong>Google Play's billing system</strong>, integrated through the <strong>Unity Purchasing SDK</strong> (<code>com.unity.purchasing</code>, version 5.4.2). This is the one third-party SDK contained in the app.</p>
+<p><strong>Diese Daten verlassen Ihr Gerät nicht.</strong> Ich erhalte sie nicht, kann nicht darauf zugreifen und speichere sie nirgends. Spielfortschritt, Bestwerte, Zählstände und Einstellungen identifizieren Sie auch gegenüber dem Spiel nicht — das ist Spielstand ohne Personenbezug. Die vom Werbe-SDK abgelegten Einstellungen betreffen dagegen Kennungen wie die Werbe-ID Ihres Geräts; solche Kennungen gelten als personenbezogene Daten und sind in Abschnitt 5 beschrieben.</p>
+<p><strong>Rechtsgrundlage:</strong> Das Speichern und Auslesen dieser Informationen auf Ihrem Endgerät ist für den von Ihnen ausdrücklich gewünschten Dienst — ein Spiel, das sich Ihren Fortschritt merkt — unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Für die Speicherung durch das Werbe-SDK gilt Ihre Einwilligung (§ 25 Abs. 1 TDDDG, Art. 6 Abs. 1 lit. a DSGVO), siehe Abschnitt 5.</p>
+<p><strong>Speicherdauer:</strong> Solange die App installiert ist; das Kaufregister höchstens 14 Tage. Beim Deinstallieren wird alles davon gelöscht (zur Gerätesicherung Ihres Betriebssystems siehe Abschnitt 13).</p>
+<hr>
+<h2>3. Google als Empfänger</h2>
+<p>Zwei der drei Netzwege — Käufe und Werbung — laufen über Google. Damit Sie wissen, an wen Sie sich mit Auskunfts- oder Löschbegehren wenden können, hier einmal zentral:</p>
+<p><strong>Google Ireland Limited</strong>, Gordon House, Barrow Street, Dublin 4, Irland — der für Nutzer im Europäischen Wirtschaftsraum zuständige Anbieter.<br><strong>Google LLC</strong>, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA — für die Verarbeitung in den Vereinigten Staaten.</p>
+<p>Google bestimmt bei der Kaufabwicklung und bei der Werbeauslieferung selbst über Zwecke und Mittel und handelt insoweit als eigenständig Verantwortlicher nach seinen eigenen Datenschutzbestimmungen. Für die Daten, die dabei bei Google anfallen, ist deshalb Google die Stelle, die Auskunft geben und löschen kann.</p>
+<p>Googles Datenschutzerklärung: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>„Wie Google Daten verwendet, wenn Sie Websites oder Apps unserer Partner nutzen": <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<hr>
+<h2>4. In-App-Käufe</h2>
+<p>Das Spiel bietet fünf Gem-Pakete als optionale Käufe an. Sie laufen über das <strong>Abrechnungssystem von Google Play</strong>, eingebunden über das <strong>Unity-Purchasing-SDK</strong> (<code>com.unity.purchasing</code>, Version 5.4.2).</p>
 <ul>
-  <li><strong>What Google processes.</strong> The payment itself happens entirely inside Google Play, using the Google account signed in on your device. The app never sees your payment details — no name, no card number, no billing address. Google's handling of that data is governed by Google Play's own terms and privacy policy.</li>
-  <li><strong>What the app receives.</strong> After a payment, the app receives order data from Google Play — the product identifier and the purchase receipt — verifies it, credits the purchase, and stores the result locally like any other progress.</li>
-  <li><strong>What a purchase requires.</strong> Buying requires an internet connection and a Google account. Playing the game requires neither. The five gem packs are consumable — once credited they are gone from the store's own record, so there is nothing left to “restore” after a reinstall.</li>
+<li><strong>Was Google verarbeitet.</strong> Die Zahlung findet vollständig innerhalb von Google Play statt, über das auf Ihrem Gerät angemeldete Google-Konto. Die App sieht Ihre Zahlungsdaten nie — keinen Namen, keine Kartennummer, keine Rechnungsanschrift. Wie Google diese Daten verarbeitet, richtet sich nach den Bedingungen und der Datenschutzerklärung von Google Play.</li>
+<li><strong>Was die App bekommt, und woher.</strong> Nach einer Zahlung erhält die App die Bestelldaten nicht von Ihnen, sondern von Google Play. Kategorien: Produktkennung, Bestell- beziehungsweise Kauftoken, Kaufstatus und Zeitpunkt. Ihr Name, Ihre Zahlungsdaten und Ihre Rechnungsanschrift sind darin nicht enthalten. Die App ordnet daraus die gekaufte Menge zu, schreibt den Kauf gut und speichert das Ergebnis lokal wie jeden anderen Fortschritt; die Transaktionskennung landet für längstens 14 Tage im Kaufregister aus Abschnitt 2. Diese Daten gehen nicht an mich weiter.</li>
+<li><strong>Was ein Kauf voraussetzt.</strong> Ein Kauf braucht eine Internetverbindung und ein Google-Konto. Zum Spielen brauchen Sie beides nicht. Alle fünf Gem-Pakete sind Verbrauchsartikel: Einmal gutgeschrieben, sind sie auch in Googles eigener Aufzeichnung verbraucht — nach einer Neuinstallation gibt es daher nichts „wiederherzustellen".</li>
 </ul>
-
-<h2>What the app does not do</h2>
+<p><strong>Zweck:</strong> Abwicklung eines von Ihnen ausgelösten Kaufs und die Gutschrift im Spiel.<br><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erfüllung eines Vertrags, den Sie mit dem Kauf schließen).<br><strong>Empfänger:</strong> Google (siehe Abschnitt 3). Ihre Kaufhistorie gehört zu Ihrem Google-Konto und bleibt bei Google.<br><strong>Übermittlung in die USA:</strong> Google verarbeitet diese Daten auch auf Servern in den Vereinigten Staaten. Google LLC ist nach eigenen Angaben unter dem EU-US Data Privacy Framework zertifiziert; für Übermittlungen an zertifizierte Unternehmen gilt der Angemessenheitsbeschluss der EU-Kommission vom 10. Juli 2023. Näheres siehe Abschnitt 5.6.<br><strong>Speicherdauer:</strong> Die App speichert die gutgeschriebene Menge lokal, bis Sie die App deinstallieren, und die Transaktionskennung höchstens 14 Tage. Wie lange Google die Kaufdaten aufbewahrt, bestimmt Google; für steuer- und handelsrechtliche Nachweise gelten die gesetzlichen Aufbewahrungsfristen bei den beteiligten Stellen.</p>
+<hr>
+<h2>5. Werbung (Belohnungsvideos)</h2>
+<p>Werbung gibt es im Spiel in genau einer Form: <strong>Belohnungsvideos, die Sie selbst durch Tippen auf eine klar beschriftete Schaltfläche starten</strong> — um sich wiederzubeleben, die Coins eines Laufs zu verdoppeln, das Kartenangebot neu zu ziehen oder in der Halle Gems zu verdienen. Es gibt keine Banner, keine Interstitials, und kein Video startet von allein. Wenn Sie kein Video ansehen, kostet Sie das nur das Video: Das Spiel, der Fortschritt und alle Modi bleiben vollständig spielbar.</p>
+<p>Die Werbung liefert <strong>Google AdMob</strong>, eingebunden über das <strong>Google Mobile Ads SDK für Unity</strong> (<code>com.google.ads.mobile</code>, Version 11.5.0, mit <code>play-services-ads</code> 25.4.0). Darin enthalten ist auch das SDK der <strong>User Messaging Platform (UMP)</strong> (Version 4.0.0) für die Einwilligungsabfrage.</p>
+<h3>5.1 Die Einwilligungsabfrage selbst</h3>
+<p>Damit das Spiel überhaupt weiß, ob und welche Abfrage nötig ist, fragt Googles Einwilligungs-SDK (UMP) das <strong>bei jedem App-Start</strong> bei Google ab — vor Ihrem ersten Tippen, unabhängig davon, ob Sie je ein Video starten, und auch dann, wenn Sie zuvor abgelehnt haben. Dabei verarbeitet Google Ihre IP-Adresse. Das ist der einzige Vorgang, der auch ohne Einwilligung stattfindet.</p>
+<p>Werbliches passiert dabei nichts: Das Werbe-SDK wird nicht initialisiert und keine Anzeige angefordert, solange die Abfrage nicht abgeschlossen ist — und nach einer Ablehnung überhaupt nicht mehr.</p>
+<p><strong>Zweck:</strong> Feststellen, ob eine Einwilligung erforderlich ist, und gegebenenfalls die Abfrage anzeigen; Erinnern Ihrer bereits erteilten Antwort.<br><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. c DSGVO (Erfüllung der rechtlichen Pflicht, eine Einwilligung ordnungsgemäß einzuholen), ergänzend Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse daran, überhaupt feststellen zu können, ob und welche Abfrage nötig ist).</p>
+<h3>5.2 Was Google beim Ausliefern einer Anzeige verarbeitet</h3>
+<p>Wenn eine Anzeige geladen oder gezeigt wird, sendet das Google Mobile Ads SDK Daten an Google. Nach Googles eigener Offenlegung für dieses SDK sind das:</p>
 <ul>
-  <li><strong>No transmission from gameplay.</strong> Playing sends nothing anywhere. The only network feature in the app is the purchase path described above.</li>
-  <li><strong>No analytics or tracking.</strong> There is no analytics service and no advertising identifier.</li>
-  <li><strong>No advertising.</strong> The game shows no ads, and no advertising SDK is included in the app.</li>
-  <li><strong>No other third-party SDKs.</strong> The Unity Purchasing SDK described above is the only one; no other external service receives anything.</li>
-  <li><strong>No sign-up.</strong> You never create an account for the game and never provide a name, email address, or any other personal information to it. Purchases use the Google account already on your device, through Google Play.</li>
-  <li><strong>No permissions beyond what a game with purchases requires.</strong> The app does not access your contacts, location, camera, microphone, or files outside its own storage. (Google Play's standard billing permission is used for the purchases described above.)</li>
+<li>Ihre <strong>IP-Adresse</strong> (daraus schätzt Google einen groben Standort),</li>
+<li>die <strong>Werbe-ID</strong> Ihres Geräts und die <strong>App-Set-ID</strong>,</li>
+<li><strong>Anzeigeninteraktionen</strong> (dass die App gestartet wurde, dass ein Video gesehen wurde, Tippen auf die Anzeige),</li>
+<li><strong>Diagnosedaten</strong> (zum Beispiel die Startzeit der App).</li>
 </ul>
-
-<h2>Deleting your data</h2>
-<p>Uninstalling the app deletes all of the locally stored data listed above; the app keeps no copy anywhere else. Your purchase history is not stored by the app at all — it belongs to your Google account and remains with Google Play. To manage or delete that history, use your Google account settings.</p>
-<p>One note outside the app's control: your device's operating system may include app data in its own device backups (for example Android's automatic backup to your Google account). That behaviour belongs to your device and its settings, not to the game.</p>
-
-<h2>Children</h2>
-<p>The game collects no data from anyone, including children, and contains no chat and no advertising. In-app purchases are real-money purchases processed by Google Play: Google Play's purchase authentication and parental-control settings apply, and a purchase awaiting approval (for example parental approval) is not credited until Google Play confirms it.</p>
-
-<h2>Changes to this policy</h2>
-<p>If a future version of the game ever adds a feature that handles data differently (for example online leaderboards), this policy will be updated first, and the “Last updated” date above will change.</p>
-
-<h2>Contact</h2>
-<p>If you have questions about this policy or the app:</p>
-<ul class="contact">
-  <li>Publisher: <strong>Raphael Esslinger</strong></li>
-  <li>Email: <a href="mailto:support.northloopsgame@gmail.com">support.northloopsgame@gmail.com</a></li>
-  <li>Address (where legally required): <strong>Frauenalber Straße 39, 76199 Karlsruhe, Germany</strong></li>
+<p>Google nutzt das, um Anzeigen auszuwählen, auszuliefern und zu messen und um Betrug zu verhindern. Ob die Anzeigen personalisiert sind, hängt von Ihrer Einwilligung ab. <strong>Diese Daten gehen an Google, nicht an mich.</strong> Das Spiel selbst erfährt nur, dass ein Video zu Ende gesehen wurde.</p>
+<p>In die App ist kein weiteres Werbenetzwerk eingebunden; sie enthält keine Vermittlungs- oder Bidding-Adapter anderer Anbieter. Welche Werbepartner Google im Rahmen der Auslieferung einbezieht, führt das Einwilligungsformular auf — Sie können die Liste dort jederzeit einsehen und Ihre Auswahl ändern.</p>
+<h3>5.3 Einwilligung zuerst</h3>
+<p>In Regionen, in denen das Gesetz eine Einwilligung für Werbung verlangt (Europäischer Wirtschaftsraum, Vereinigtes Königreich, Schweiz), zeigt das Spiel Ihnen Googles Einwilligungsformular, <strong>bevor</strong> irgendetwas Werbliches läuft: Das Werbe-SDK wird gar nicht erst initialisiert, und es wird keine Anzeige angefordert, solange die Abfrage nicht beantwortet ist. Lehnen Sie ab, wird nie eine Anzeige geladen; die Video-Angebote erscheinen dann einfach nicht. Außerhalb dieser Regionen verlangt Google keine Abfrage, und Anzeigen werden ohne sie ausgeliefert.</p>
+<p><strong>Zweck:</strong> Auslieferung und Messung der Belohnungsvideos, mit denen das Spiel finanziert wird.<br><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG — Ihre Einwilligung, erteilt über die Abfrage der Google User Messaging Platform. Ohne Einwilligung findet keine Werbeverarbeitung statt.</p>
+<h3>5.4 Einwilligung widerrufen oder ändern</h3>
+<p>In den Regionen, in denen eine Einwilligung erforderlich ist, öffnet <strong>Einstellungen → „Einwilligung ändern"</strong> dasselbe Google-Formular; dort können Sie Ihre Antwort jederzeit ändern oder zurücknehmen. Außerhalb dieser Regionen hat Google für dieses Formular nichts zu zeigen, und der Eintrag bleibt wirkungslos. Ein Widerruf wirkt für die Zukunft; die Rechtmäßigkeit der Verarbeitung bis zum Widerruf bleibt unberührt. Ein bereits geladenes Video wird beim Widerruf verworfen.</p>
+<p>Unabhängig vom Spiel können Sie Ihre Werbe-ID unter <strong>Einstellungen → Datenschutz → Werbung</strong> in Android zurücksetzen oder löschen; das Werbe-SDK erhält dann keine verwendbare Werbe-ID mehr. Weitere Einstellungen bietet Google unter <a href="https://myadcenter.google.com">https://myadcenter.google.com</a>.</p>
+<h3>5.5 Profilbildung</h3>
+<p>Ich selbst bilde kein Profil von Ihnen und treffe keine automatisierten Entscheidungen im Sinne von Art. 22 DSGVO. Willigen Sie in personalisierte Werbung ein, kann Google die unter 5.2 genannten Daten mit Daten aus anderen Apps und Diensten zusammenführen und daraus Interessenkategorien ableiten, um die Auswahl der Anzeigen darauf abzustimmen. Rechtliche oder ähnlich erhebliche Wirkungen im Sinne von Art. 22 DSGVO hat das nicht. Welche Kategorien Google Ihnen zuordnet, sehen und ändern Sie unter <a href="https://myadcenter.google.com">https://myadcenter.google.com</a>.</p>
+<h3>5.6 Übermittlung in die USA</h3>
+<p>Google verarbeitet Werbedaten auch auf Servern außerhalb der Europäischen Union, insbesondere in den <strong>Vereinigten Staaten</strong>.</p>
+<p>Für die USA besteht ein auf zertifizierte Unternehmen begrenzter Angemessenheitsbeschluss der EU-Kommission vom 10. Juli 2023 (EU-US Data Privacy Framework). Google LLC ist danach zertifiziert; einsehen können Sie das im öffentlichen Verzeichnis unter <a href="https://www.dataprivacyframework.gov">https://www.dataprivacyframework.gov</a>. Für Übermittlungen außerhalb dieses Rahmens verwendet Google die Standardvertragsklauseln der EU-Kommission nach Art. 46 Abs. 2 lit. c DSGVO; sie sind über Googles Datenschutzhinweise abrufbar, und eine Kopie können Sie auch bei mir unter support.northloopsgame@gmail.com anfordern. In beiden Fällen bleibt das Risiko, dass US-Behörden auf Daten zugreifen und dass Ihre Rechte dort schwerer durchzusetzen sind.</p>
+<p>Willigen Sie nicht ein, findet keine Übermittlung von Werbedaten statt; die Anfrage des Einwilligungs-SDK aus Abschnitt 5.1 läuft weiterhin.</p>
+<p><strong>Speicherdauer:</strong> Wie lange Google die unter 5.1 und 5.2 genannten Daten speichert, bestimmt Google. Ihre Einwilligungsentscheidung bleibt lokal gespeichert, bis Sie sie ändern oder die App deinstallieren.</p>
+<hr>
+<h2>6. Der Schalter „Nutzungsstatistik"</h2>
+<p>In den Einstellungen gibt es einen Schalter mit der Bezeichnung <strong>„Nutzungsstatistik"</strong>. Damit hier nichts Falsches steht: <strong>Dahinter steckt derzeit kein Analysedienst.</strong> Die Funktion schreibt Spielereignisse ausschließlich in das lokale Protokoll des Geräts (<code>Debug.Log</code>). Es wird nichts gesendet, nichts an mich übermittelt und nichts ausgewertet — weder von mir noch von Dritten. Ich habe kein Analyse-SDK eingebunden.</p>
+<p>Der Schalter schaltet also nur diese lokalen Protokollzeilen ein oder aus. Seine Stellung wird lokal auf Ihrem Gerät gespeichert. Sollte in einer künftigen Version tatsächlich ein Analysedienst dazukommen, wird diese Erklärung vorher geändert.</p>
+<hr>
+<h2>7. Benachrichtigungen</h2>
+<p>Die App kann Ihnen höchstens zwei Erinnerungen anzeigen: dass die tägliche Gratis-Kiste wieder bereit ist und dass Ihre Tagesserie an diesem Tag noch offen ist. Diese Erinnerungen plant Ihr Gerät selbst und zeigt sie selbst an. Es gibt dafür keinen Server, keinen Push-Dienst und keine Übertragung — auch hier verlässt nichts das Gerät.</p>
+<p>Auf Android 13 und neuer fragt Sie das System nach der Erlaubnis für Benachrichtigungen, sobald Sie das Spiel das erste Mal verlassen. Sie können sie jederzeit in den Android-Einstellungen der App wieder entziehen; das Spiel plant dann keine Erinnerungen mehr.</p>
+<p><strong>Rechtsgrundlage:</strong> Ihre über die Systemabfrage erteilte Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); für das Ablegen der geplanten Zeitpunkte auf Ihrem Gerät § 25 Abs. 1 TDDDG.<br><strong>Speicherdauer:</strong> Die geplanten Erinnerungszeitpunkte liegen auf Ihrem Gerät und werden gelöscht, sobald die Erinnerung ausgelöst oder neu geplant wurde, Sie die Erlaubnis entziehen oder die App deinstallieren.</p>
+<hr>
+<h2>8. Berechtigungen der App und wofür sie da sind</h2>
+<p>| Berechtigung | Wofür |<br>|---|---|<br>| <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> | Einwilligungsabfrage, Käufe über Google Play und Laden der Belohnungsvideos |<br>| <code>com.android.vending.BILLING</code> | Käufe über Google Play (vom Google-Play-Billing-Baustein mitgebracht) |<br>| <code>com.google.android.gms.permission.AD_ID</code> | Werbe-ID für die Belohnungsvideos (vom Google Mobile Ads SDK mitgebracht) |<br>| <code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>ACCESS_ADSERVICES_TOPICS</code> | Androids Privacy-Sandbox-Schnittstellen, die das Google Mobile Ads SDK mitbringt |<br>| <code>POST_NOTIFICATIONS</code> | Die beiden lokalen Erinnerungen aus Abschnitt 7 |<br>| <code>FOREGROUND_SERVICE</code>, <code>WAKE_LOCK</code> | Von Hilfsbibliotheken mitgebracht, die das Google Mobile Ads SDK einbindet (<code>androidx.work</code> beziehungsweise <code>play-services-measurement</code>). Die App selbst startet keinen Vordergrunddienst und hält das Gerät nicht wach. |<br>| <code>VIBRATE</code> | Haptisches Feedback im Spiel |<br>| <code>com.neonfall.arcade.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> | Rein app-interne Schutzkennung auf Signaturebene (von einer AndroidX-Bibliothek mitgebracht). Sie gibt keinen Zugriff auf Ihr Gerät und ist für andere Apps unerreichbar. |</p>
+<p>Die App greift <strong>nicht</strong> auf Kontakte, Standort, Kamera, Mikrofon oder Dateien außerhalb ihres eigenen Speichers zu. Dass Google beim Ausliefern einer Anzeige aus der IP-Adresse einen groben Standort schätzt, ist keine Standortberechtigung — das Spiel liest Ihren Standort nie.</p>
+<p>Zusätzlich meldet das Werbe-SDK im Manifest an, dass es prüfen darf, ob auf Ihrem Gerät ein Browser, eine Kalender-, SMS- oder Telefon-App vorhanden ist; der Kaufweg fragt entsprechend nach der Google-Play-App. Das ist keine Berechtigung auf deren Inhalte, sondern dient nur dazu, dass eine Anzeige, die Sie antippen, überhaupt geöffnet werden kann. Weder das Spiel noch ich lesen dort etwas aus.</p>
+<hr>
+<h2>9. Was die App nicht tut</h2>
+<ul>
+<li><strong>Kein Datenversand beim Spielen.</strong> Das Spielen selbst sendet nichts. Die einzigen Netzfunktionen sind die Einwilligungsabfrage, der Kaufweg und die Belohnungsvideos.</li>
+<li><strong>Kein Analyse- oder Trackingdienst von mir.</strong> Ich habe kein Analyse-SDK eingebunden und bilde kein Profil über Sie (siehe Abschnitt 6).</li>
+<li><strong>Keine weiteren SDKs von mir.</strong> Außer Unity Purchasing und Google Mobile Ads (samt UMP) habe ich kein weiteres SDK eingebunden. Diese beiden bringen ihrerseits Google- und AndroidX-Hilfsbibliotheken mit — unter anderem Google Play Billing, Google Play Services sowie Googles Mess- und Übertragungsbausteine. Sie gehören zum Werbe- und Kaufweg und arbeiten nur in dessen Rahmen; kein weiterer Dienst erhält von mir Daten.</li>
+<li><strong>Keine Anmeldung.</strong> Sie legen kein Konto für das Spiel an und geben ihm weder Namen noch E-Mail-Adresse noch sonstige persönliche Daten. Käufe laufen über das Google-Konto, das ohnehin auf Ihrem Gerät angemeldet ist.</li>
+<li><strong>Kein Verkauf von Daten.</strong> Ich verkaufe keine Daten — ich habe keine.</li>
 </ul>
-
-<footer>NEONFALL is published by Raphael Esslinger (Northloops Games).</footer>
+<hr>
+<h2>10. Müssen Sie Daten bereitstellen?</h2>
+<p>Sie sind zu nichts verpflichtet. Weder für die Installation noch für das Spielen müssen Sie Daten bereitstellen; es gibt keine gesetzliche oder vertragliche Pflicht dazu.</p>
+<ul>
+<li><strong>Kauf:</strong> Für einen Kauf ist die Abwicklung über Ihr Google-Konto erforderlich — ohne sie kommt kein Kauf zustande. Das Spiel bleibt auch ohne Kauf vollständig spielbar.</li>
+<li><strong>Werbung:</strong> Die Einwilligung ist freiwillig. Verweigern oder widerrufen Sie sie, entfallen lediglich die Belohnungsvideos und die damit verbundenen Extras. Ein Nachteil im Spielverlauf entsteht Ihnen dadurch nicht.</li>
+<li><strong>Benachrichtigungen:</strong> Ebenfalls freiwillig. Ohne Erlaubnis erhalten Sie keine Erinnerungen; sonst ändert sich nichts.</li>
+</ul>
+<p>Der einzige Vorgang, den Sie nicht abwählen können, solange Sie spielen, ist die Anfrage des Einwilligungs-SDK aus Abschnitt 5.1.</p>
+<hr>
+<h2>11. Kontakt per E-Mail</h2>
+<p>Wenn Sie mir schreiben, verarbeite ich Ihre E-Mail-Adresse und den Inhalt Ihrer Nachricht, um Ihre Anfrage zu beantworten.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, wenn es um einen Kauf oder eine vorvertragliche Frage geht, sonst Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse daran, Anfragen zu Spiel und App überhaupt beantworten zu können).<br><strong>Empfänger:</strong> Der Anbieter des genannten Postfachs, Google Ireland Limited (Google Mail).<br><strong>Übermittlung in die USA:</strong> Google verarbeitet E-Mails auch auf Servern in den Vereinigten Staaten (Google LLC). Es gilt dasselbe wie in Abschnitt 5.6: Angemessenheitsbeschluss vom 10. Juli 2023 für nach dem EU-US Data Privacy Framework zertifizierte Unternehmen, ergänzend Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c DSGVO.<br><strong>Speicherdauer:</strong> Bis die Anfrage erledigt ist und kein Anlass mehr besteht, sie aufzubewahren. Wo gesetzliche Aufbewahrungsfristen greifen (etwa bei Kaufbelegen), gelten diese.</p>
+<hr>
+<h2>12. Widerspruchsrecht</h2>
+<p>&gt; <strong>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit Widerspruch gegen eine Verarbeitung Ihrer Daten einzulegen, die ich auf ein berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO) stütze. Das betrifft hier die Bearbeitung Ihrer E-Mail-Anfragen (Abschnitt 11) sowie ergänzend die Abfrage des Einwilligungs-SDK (Abschnitt 5.1). Eine formlose Nachricht an support.northloopsgame@gmail.com genügt.</strong></p>
+<hr>
+<h2>13. Löschen Ihrer Daten</h2>
+<p><strong>Deinstallieren löscht alles</strong>, was in Abschnitt 2 steht, einschließlich des Kaufregisters und Ihrer gespeicherten Einwilligungsentscheidung. Die App behält nirgendwo eine Kopie, und es gibt keinen Server, auf dem etwas übrig bleiben könnte.</p>
+<p>Eine <strong>Kaufhistorie</strong> im eigentlichen Sinn führt die App nicht — sie gehört zu Ihrem Google-Konto und bleibt bei Google Play; verwalten oder löschen können Sie sie in den Einstellungen Ihres Google-Kontos. Lokal bleibt nur das in Abschnitt 2 beschriebene Kaufregister, und das höchstens 14 Tage.</p>
+<p>Daten, die Googles SDKs bereits an Google gesendet haben, liegen bei Google und unterliegen Googles eigener Datenschutzerklärung. Ihre Werkzeuge dafür sind die Einwilligungsentscheidung im Spiel, die Werbe-ID-Einstellungen Ihres Geräts (Abschnitt 5.4) und Googles eigene Einstellungen unter <a href="https://myadcenter.google.com">https://myadcenter.google.com</a>.</p>
+<p>Eines liegt außerhalb der Kontrolle der App: Das Betriebssystem Ihres Geräts kann App-Daten in seine eigenen Gerätesicherungen aufnehmen (zum Beispiel Androids automatische Sicherung in Ihr Google-Konto). Das gehört zu Ihrem Gerät und dessen Einstellungen, nicht zum Spiel.</p>
+<hr>
+<h2>14. Ihre Rechte</h2>
+<p>Sie haben nach der DSGVO folgende Rechte:</p>
+<ul>
+<li><strong>Auskunft</strong> (Art. 15) — welche Daten über Sie verarbeitet werden</li>
+<li><strong>Berichtigung</strong> (Art. 16) — falsche Daten korrigieren zu lassen</li>
+<li><strong>Löschung</strong> (Art. 17) — Daten löschen zu lassen</li>
+<li><strong>Einschränkung der Verarbeitung</strong> (Art. 18)</li>
+<li><strong>Datenübertragbarkeit</strong> (Art. 20) — Daten in einem gängigen Format zu erhalten</li>
+<li><strong>Widerspruch</strong> (Art. 21) — siehe den eigenen Abschnitt 12</li>
+<li><strong>Widerruf der Einwilligung</strong> (Art. 7 Abs. 3) — jederzeit und ohne Angabe von Gründen, mit Wirkung für die Zukunft; für die Werbung geht das direkt im Spiel unter Einstellungen → „Einwilligung ändern"</li>
+</ul>
+<p>Für alle diese Rechte wenden Sie sich an support.northloopsgame@gmail.com.</p>
+<p><strong>Eine ehrliche Einschränkung:</strong> Ich speichere selbst keine Daten über Sie. Die Daten des Spiels liegen ausschließlich auf Ihrem Gerät, und ich habe keinen Zugriff darauf — hier üben Sie Ihre Rechte am schnellsten selbst aus (Einstellungen ändern, Einwilligung widerrufen, App deinstallieren). Für Daten, die Google beim Ausliefern einer Anzeige oder beim Abwickeln eines Kaufs verarbeitet, ist Google die Stelle, die Auskunft geben und löschen kann (Abschnitt 3); ich kann dort nicht für Sie handeln, verweise Sie aber gern an die richtige Stelle.</p>
+<hr>
+<h2>15. Beschwerderecht bei der Aufsichtsbehörde</h2>
+<p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Wegen des Sitzes in Karlsruhe ist zuständig:</p>
+<p><strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg</strong><br>Lautenschlagerstraße 20<br>70173 Stuttgart<br>Telefon 0711 615541-0<br>poststelle@lfdi.bwl.de<br><a href="https://www.baden-wuerttemberg.datenschutz.de">https://www.baden-wuerttemberg.datenschutz.de</a></p>
+<p>Sie können sich auch an die Aufsichtsbehörde Ihres Wohnorts oder Ihres Arbeitsplatzes wenden.</p>
+<hr>
+<h2>16. Kinder</h2>
+<p>Das Spiel richtet sich nicht besonders an Kinder; es ist ein gewöhnliches Arcade-Spiel und fragt nicht nach Ihrem Alter. Ich erhebe von niemandem Daten — auch nicht von Kindern — und es gibt keinen Chat.</p>
+<p>Weil das Spiel nicht nach dem Alter fragt, übermittelt es an Google auch keine Altersangabe; Anzeigen werden für alle Spieler gleich behandelt. Wenn Ihr Kind spielt, gelten für die Werbung dieselben Angaben wie in Abschnitt 5 — richten Sie die Aufsicht bitte über die Jugendschutz- und Werbeeinstellungen von Google Play und Android ein.</p>
+<p>Die beiden Funktionen, an denen Dritte beteiligt sind, sind freiwillig und starten nur nach einem bewussten Tippen: In-App-Käufe sind echte Zahlungen über Google Play (dessen Kaufauthentifizierung und Jugendschutzeinstellungen gelten; ein Kauf, der auf Freigabe wartet, wird erst gutgeschrieben, wenn Google Play ihn bestätigt), und Belohnungsvideos liefert Google AdMob wie oben beschrieben.</p>
+<hr>
+<h2>17. Änderungen dieser Erklärung</h2>
+<p>5. September 2026: Diese deutsche Fassung ersetzt die bisherige, nur englische Erklärung und ergänzt die Pflichtangaben nach Art. 13 DSGVO (Verantwortlicher, Rechtsgrundlagen, Empfänger, Drittlandsübermittlung, Speicherdauer, Betroffenenrechte, Aufsichtsbehörde). Maßgeblich ist diese deutsche Fassung. Der Abschnitt „Werbung (Belohnungsvideos)" kam hinzu, als Google AdMob eingebunden wurde; frühere Versionen des Spiels enthielten keine Werbung, und die Erklärung sagte das auch so.</p>
+<p>Wenn eine künftige Version des Spiels eine Funktion bekommt, die Daten anders behandelt (zum Beispiel Online-Bestenlisten oder ein echtes Analyse-SDK), wird diese Erklärung vorher geändert und das Datum oben angepasst.</p>
+<hr>
+<h2>18. Kontakt</h2>
+<p>Fragen zu dieser Erklärung oder zur App:</p>
+<p>Raphael Esslinger<br>Frauenalber Strasse 39<br>76199 Karlsruhe<br>Deutschland<br>support.northloopsgame@gmail.com</p>
+<hr>
+<p>*Dies ist ein sorgfältig erstellter Entwurf, keine Rechtsberatung. Vor der Veröffentlichung sollte ihn ein Mensch prüfen — idealerweise jemand mit datenschutzrechtlicher Erfahrung.*</p>
+<p>© 2026 Northloops Games — Raphael Esslinger. Alle Rechte vorbehalten.</p>
+<footer>NEONFALL wird herausgegeben von Raphael Esslinger (Northloops Games).</footer>
 
 </main>
 </body>
