@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daten löschen — NEONFALL</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #14161c;
+    --muted: #5a6072;
+    --bg: #ffffff;
+    --rule: #e3e6ee;
+    --accent: #0b6bcb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e7e9f0; --muted: #a2a9bd; --bg: #12141a; --rule: #2a2e3a; --accent: #6cb2ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.4rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .3rem; letter-spacing: -.02em; }
+  .updated { color: var(--muted); font-size: .93rem; margin: 0 0 2.2rem; }
+  h2 {
+    font-size: 1.18rem; margin: 2.6rem 0 .7rem; padding-top: 1.4rem;
+    border-top: 1px solid var(--rule); letter-spacing: -.01em;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.3rem; }
+  li { margin-bottom: .55rem; }
+  strong { font-weight: 600; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .9em; background: color-mix(in srgb, var(--rule) 60%, transparent);
+    padding: .1em .35em; border-radius: 3px;
+  }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  .contact { margin-top: .5rem; }
+  .contact li { list-style: none; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .88rem;
+  }
+  h3 { font-size: 1.02rem; margin: 1.8rem 0 .6rem; letter-spacing: -.005em; }
+  em { font-style: italic; }
+  blockquote {
+    margin: 0 0 1rem; padding: .9rem 1.1rem; border-left: 3px solid var(--accent);
+    background: color-mix(in srgb, var(--rule) 35%, transparent); border-radius: 0 4px 4px 0;
+  }
+  blockquote p { margin: 0; }
+  .tabelle { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .94rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem .7rem; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; }
+  ol { margin: 0 0 1rem; padding-left: 1.4rem; }
+  ol li { margin-bottom: .7rem; }
+  .lang { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--rule); }
+  .kasten {
+    margin: 1.4rem 0; padding: 1rem 1.2rem; border-left: 3px solid var(--accent);
+    background: color-mix(in srgb, var(--rule) 35%, transparent); border-radius: 0 4px 4px 0;
+  }
+  .kasten p:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Daten löschen — NEONFALL</h1>
+<p class="updated">Stand: 9. September 2026</p>
+
+<p>Diese Seite gehört zum Spiel <strong>NEONFALL</strong> (Paketname <code>com.neonfall.arcade</code>),
+herausgegeben von Raphael Esslinger (Northloops Games). Sie beschreibt, welche Daten es gibt, wie Sie
+sie löschen und was danach noch irgendwo liegt.</p>
+
+<div class="kasten">
+<p><strong>Das Wichtigste zuerst:</strong> NEONFALL hat keinen Server. Ich bewahre nichts über Sie
+auf und kann auf nichts zugreifen. Ihre Daten liegen an genau zwei Orten — auf Ihrem Gerät und,
+nur wenn Sie sich bei Google Play Games angemeldet haben, in einem versteckten Ordner Ihres
+eigenen Google-Kontos.</p>
+</div>
+
+<h2>1. Was gelöscht wird, wenn Sie die App deinstallieren</h2>
+
+<p>Eine Deinstallation entfernt alles, was auf dem Gerät liegt:</p>
+
+<ul>
+<li>Spielfortschritt und Besitz — Level, Upgrades, Waffen, Schiffe, Erfolge, Coins und Gems</li>
+<li>Ihre lokalen Bestwerte und die Bestenliste Ihrer fünf besten Endlos-Läufe</li>
+<li>Statistiken, tägliche Missionen, Tagesserie und Zeitanker</li>
+<li>Einstellungen — Sprache, Ton, Darstellung, Vibration</li>
+<li>Das Kaufregister (Transaktionskennungen, damit ein Kauf nicht zweimal gutgeschrieben wird);
+es wird ohnehin nach spätestens <strong>14 Tagen</strong> automatisch gelöscht</li>
+<li>Ihre gespeicherte Werbe-Einwilligung</li>
+</ul>
+
+<h2>2. Was eine Deinstallation absichtlich NICHT löscht</h2>
+
+<p>Waren Sie bei Google Play Games angemeldet, liegt eine Sicherung Ihres Spielstands in einem
+für Sie unsichtbaren Ordner Ihres eigenen Google Drive (technisch: <code>drive.appdata</code>).
+Genau dafür ist sie da — damit ein gekauftes Gem-Paket und Ihr Fortschritt eine Neuinstallation
+oder einen Gerätewechsel überstehen. Sie wird deshalb bei einer Deinstallation <strong>nicht</strong>
+mitgelöscht.</p>
+
+<p><strong>So löschen Sie diese Sicherung selbst:</strong></p>
+
+<ol>
+<li>In der <strong>Google Play Games</strong>-App: Ihr Profil öffnen → <em>Einstellungen</em> →
+<em>Spielstände löschen</em> → NEONFALL auswählen.</li>
+<li>Oder in <strong>Google Drive</strong>: <em>Einstellungen</em> → <em>Apps verwalten</em> →
+NEONFALL → <em>Versteckte App-Daten löschen</em>.</li>
+</ol>
+
+<p>Das Spiel wird dabei nicht deinstalliert. Nach dem Löschen beginnt es beim nächsten Start
+mit einem leeren Spielstand.</p>
+
+<h2>3. Löschung bei mir anfordern</h2>
+
+<p>Sie können die Löschung auch formlos bei mir anfordern:</p>
+
+<div class="kasten">
+<p><strong>support.northloopsgame@gmail.com</strong></p>
+<p>Eine Nachricht mit dem Wort „Löschung" genügt. Ich antworte innerhalb von 30 Tagen
+(Art. 12 Abs. 3 DSGVO).</p>
+</div>
+
+<p>Eine ehrliche Einschränkung: Ich kann Ihren Spielstand nicht für Sie löschen, weil ich keinen
+Zugriff darauf habe — er liegt auf Ihrem Gerät und in Ihrem Google-Konto, nicht bei mir. Ich kann
+Ihnen den Weg zeigen (Abschnitte 1 und 2), Ihre Anfrage beantworten und Sie bei Daten, die
+<em>Google</em> verarbeitet, an die richtige Stelle verweisen.</p>
+
+<h2>4. Was bei Google bleibt, und was Sie dort tun können</h2>
+
+<p>Zwei Dinge liegen nicht bei mir und nicht auf Ihrem Gerät, sondern bei Google:</p>
+
+<ul>
+<li><strong>Werbedaten.</strong> Für die freiwilligen Belohnungsvideos verarbeitet Google AdMob
+die Werbe-ID Ihres Geräts, Ihre IP-Adresse und Angaben zum gezeigten Video. Ihre Werkzeuge dafür:
+die Einwilligung im Spiel unter <em>Einstellungen → Einwilligung ändern</em>, die
+Werbe-ID-Einstellungen Ihres Android-Geräts, und
+<a href="https://myadcenter.google.com">myadcenter.google.com</a>.</li>
+<li><strong>Ihre Kaufhistorie.</strong> Sie gehört zu Ihrem Google-Konto und bleibt bei Google
+Play; verwalten können Sie sie in den Einstellungen Ihres Google-Kontos. Aus steuer- und
+handelsrechtlichen Gründen bewahrt Google Kaufbelege unabhängig von einem Löschwunsch auf.</li>
+</ul>
+
+<p>Für diese Daten ist Google die verantwortliche Stelle
+(<a href="https://policies.google.com/privacy">Googles Datenschutzerklärung</a>); ich kann dort
+nicht für Sie handeln.</p>
+
+<h2>5. Aufbewahrungsfristen</h2>
+
+<ul>
+<li><strong>Auf dem Gerät:</strong> solange die App installiert ist. Das Kaufregister höchstens 14 Tage.</li>
+<li><strong>In Ihrem Google-Konto:</strong> bis Sie die Sicherung löschen (Abschnitt 2). Es gibt
+keine automatische Frist.</li>
+<li><strong>Bei mir:</strong> nichts. Ich betreibe keinen Server und lege nichts an. Eine
+E-Mail-Anfrage bewahre ich auf, bis sie erledigt ist.</li>
+</ul>
+
+<p>Ausführlich steht das alles in der
+<a href="https://officenorthloopgames-debug.github.io/neonfall/privacypolicy.html">Datenschutzerklärung</a>.</p>
+
+<div class="lang">
+
+<h1>Delete your data — NEONFALL</h1>
+<p class="updated">Last updated: 9 September 2026</p>
+
+<p>This page belongs to the game <strong>NEONFALL</strong> (package <code>com.neonfall.arcade</code>),
+published by Raphael Esslinger (Northloops Games). It explains what data exists, how to delete it,
+and what remains afterwards.</p>
+
+<div class="kasten">
+<p><strong>First things first:</strong> NEONFALL has no server. I keep nothing about you and can
+access nothing. Your data lives in exactly two places — on your device, and, only if you signed in
+to Google Play Games, in a hidden folder of your own Google account.</p>
+</div>
+
+<h2>1. What uninstalling deletes</h2>
+
+<p>Uninstalling the app removes everything stored on the device: progress and unlocks, weapons,
+ships, achievements, coins and gems; your local high scores and endless-run leaderboard;
+statistics, daily missions and streaks; settings; the purchase ledger (transaction IDs, so a
+purchase is never credited twice — deleted automatically after <strong>14 days</strong> in any
+case); and your stored advertising consent.</p>
+
+<h2>2. What uninstalling deliberately does NOT delete</h2>
+
+<p>If you were signed in to Google Play Games, a backup of your save sits in a hidden folder of
+your own Google Drive (technically: <code>drive.appdata</code>). That is exactly its purpose — so a
+purchased gem pack and your progress survive a reinstall or a new phone. It is therefore
+<strong>not</strong> removed when you uninstall.</p>
+
+<p><strong>To delete that backup yourself:</strong></p>
+
+<ol>
+<li>In the <strong>Google Play Games</strong> app: open your profile → <em>Settings</em> →
+<em>Delete Play Games account data</em> → select NEONFALL.</li>
+<li>Or in <strong>Google Drive</strong>: <em>Settings</em> → <em>Manage apps</em> → NEONFALL →
+<em>Delete hidden app data</em>.</li>
+</ol>
+
+<p>This does not uninstall the game. After deletion it starts fresh next time you open it.</p>
+
+<h2>3. Requesting deletion from me</h2>
+
+<div class="kasten">
+<p><strong>support.northloopsgame@gmail.com</strong></p>
+<p>A message containing the word "deletion" is enough. I reply within 30 days
+(Art. 12(3) GDPR).</p>
+</div>
+
+<p>An honest limitation: I cannot delete your save for you, because I have no access to it — it
+lives on your device and in your Google account, not with me. I can show you the way (sections 1
+and 2), answer your request, and point you to the right place for data that <em>Google</em>
+processes.</p>
+
+<h2>4. What stays with Google</h2>
+
+<p>Advertising data (advertising ID, IP address, video-view information) is processed by Google
+AdMob for the optional reward videos. Your controls: <em>Settings → Change consent</em> in the
+game, your device's advertising ID settings, and
+<a href="https://myadcenter.google.com">myadcenter.google.com</a>. Your purchase history belongs
+to your Google account and stays with Google Play; Google retains purchase records for tax and
+commercial-law reasons regardless of a deletion request. For this data Google is the controller
+(<a href="https://policies.google.com/privacy">Google's Privacy Policy</a>); I cannot act there on
+your behalf.</p>
+
+<h2>5. Retention</h2>
+
+<ul>
+<li><strong>On the device:</strong> as long as the app is installed. Purchase ledger: 14 days maximum.</li>
+<li><strong>In your Google account:</strong> until you delete the backup (section 2). No automatic expiry.</li>
+<li><strong>With me:</strong> nothing. I run no server. An email request is kept until it is resolved.</li>
+</ul>
+
+<p>Full details are in the
+<a href="https://officenorthloopgames-debug.github.io/neonfall/privacypolicy.html">privacy policy</a>.</p>
+
+</div>
+
+<footer>NEONFALL wird herausgegeben von Raphael Esslinger (Northloops Games) &middot; support.northloopsgame@gmail.com</footer>
+
+</main>
+</body>
+</html>
